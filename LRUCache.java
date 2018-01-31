@@ -1,3 +1,11 @@
+/*
+ *LRU缓存策略
+ *使用双向链表
+ *1. 新数据插入到链表头部；
+ *2. 每当缓存命中（即缓存数据被访问），则将数据移到链表头部；
+ *3. 当链表满的时候，将链表尾部的数据丢弃
+ *
+ */
 public class LRUCache {
     private int capacity = 0;
     private Node head = null;
